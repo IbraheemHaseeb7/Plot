@@ -9,4 +9,22 @@ public class Plot {
         this.per = per;
         this.dim = dim;
     }
+
+    public String getUserData() {
+        return String.format("Name: %s %s\nAge: %d\nCNIC: %d\nPhone Number: %d", per.fname, per.lname, per.age, per.getCNIC(), per.getPhoneNumber());
+    }
+    
+    // public String getAddress() {
+    //     return String.format();
+        
+    // }
+    
+    // public String getDimensions() {
+    //     return String.format();
+        
+    // }
+    
+    // public String getAllData() {
+    //     return String.format();
+    // }
 }

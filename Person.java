@@ -13,4 +13,12 @@ public class Person {
         this.cnic = cnic;
         phoneNumber = ph;
     }
+
+    public long getCNIC() {
+        return this.cnic;
+    }
+
+    public long getPhoneNumber() {
+        return this.phoneNumber;
+    }
 }
