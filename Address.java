@@ -10,6 +10,6 @@ public class Address {
     }
 
     public String getAddress() {
-        return String.format("Address: %d-%s, Street No. %d, %s", add.houseNumber, add.block, add.streetNumber, add.city);  
+        return String.format("Address: %d-%s, Street No. %d, %s", houseNumber, block, streetNumber, city);  
     }
 }
