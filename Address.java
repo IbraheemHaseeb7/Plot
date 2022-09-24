@@ -8,4 +8,8 @@ public class Address {
         this.block = block;
         this.city = city;
     }
+
+    public String getAddress() {
+        return String.format("Address: %d-%s, Street No. %d, %s", add.houseNumber, add.block, add.streetNumber, add.city);  
+    }
 }

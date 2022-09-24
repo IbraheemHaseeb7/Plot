@@ -1,24 +1,30 @@
 public class Person {
     String fname, lname;
-    private long phoneNumber, cnic;
+    int phoneNumber, cnic;
     byte age;
 
-    public Person(String fname, String lname, long phoneNumber, long cnic, byte age) {
+    public Person(String fname, String lname, int phoneNumber, int cnic, byte age) {
         this.fname = fname;
         this.lname = lname;
         this.age = age;
-    }
-
-    public void setCnicAndPhoneNumber(long ph, long cnic) {
         this.cnic = cnic;
-        phoneNumber = ph;
+        this.phoneNumber = phoneNumber;
     }
 
-    public long getCNIC() {
+    public void setCnicAndPhoneNumber(int ph, int cnic) {
+        this.cnic = cnic;
+        this.phoneNumber = ph;
+    }
+
+    public int getCNIC() {
         return this.cnic;
     }
 
-    public long getPhoneNumber() {
+    public int getPhoneNumber() {
         return this.phoneNumber;
+    }
+
+    public String getUserData() {
+        return String.format("Name: %s %s\nAge: %d\nCNIC: %d\nPhone Number: %d", fname, lname, age, getCNIC(), getPhoneNumber());
     }
 }

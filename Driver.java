@@ -1,8 +1,8 @@
 public class Driver {
     public static void main(String[] args) {
 
-        Plot demoPlot = new Plot(new Address(10, 2, "C", "Lahore"), new Person("Ibraheem", "Haseeb", 123l, 123l, (byte)19), new Dimensions(10, 10, 10));
+        Plot demoPlot = new Plot(new Address(10, 2, "C", "Lahore"), new Person("Ibraheem", "Haseeb", 1281, 12123, (byte)19), new Dimensions(10, 10, 10));
 
-        System.out.printf(demoPlot.getUserData());
+        System.out.printf(demoPlot.per.getUserData());
     }
 }
