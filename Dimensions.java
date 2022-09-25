@@ -13,6 +13,6 @@ public class Dimensions {
     }
 
     public String getDimensions() {
-        return String.format("Width: %d\nLength: %d\nDepth: %d\n", width, length, depth);
+        return String.format("Width: %d\nLength: %d\nDepth: %d\n\n", width, length, depth);
     }
 }
